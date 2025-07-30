@@ -1,0 +1,188 @@
+[project]
+name = "rl-stock-trading"
+version = "0.1.0"
+description = "Reinforcement Learning for Stock Trading"
+authors = [
+    {name = "Kenneth Wang", email = "bichengwang@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "absl-py",
+    "alabaster",
+    "alembic",
+    "apipkg",
+    "appdirs",
+    "attrs",
+    "Babel",
+    "backcall",
+    "black",
+    "brotlipy",
+    "cachetools",
+    "certifi",
+    "click",
+    "cliff",
+    "cloudpickle",
+    "cmaes",
+    "cmd2",
+    "colorama",
+    "colorlog",
+    "coverage",
+    "cycler",
+    "DataProperty",
+    "decorator",
+    "dill>=0.4.0",
+    "docutils",
+    "empyrical",
+    "execnet",
+    "flake8",
+    "google-auth",
+    "google-auth-oauthlib",
+    "grpcio",
+    "gym>=0.17",
+    "gym-minigrid",
+    "imagesize",
+    "importlab",
+    "importlib-metadata",
+    "iniconfig",
+    "int-date",
+    "ipykernel>=6.30.0",
+    "isort",
+    "jedi",
+    "Jinja2",
+    "joblib",
+    "kiwisolver",
+    "livereload",
+    "lxml",
+    "Mako",
+    "MarkupSafe",
+    "matplotlib",
+    "mbstrdecoder",
+    "mccabe",
+    # "mkl-random",
+    # "mkl-service",
+    "msgfy",
+    "multitasking",
+    "mypy-extensions",
+    "networkx",
+    "ninja",
+    "numpy>=1.26.4",
+    "oauthlib",
+    "opencv-python",
+    "opencv-python-headless",
+    "optuna",
+    "packaging",
+    "pandas>=1.1.5",
+    "pandas-datareader",
+    "pathspec",
+    "pathvalidate",
+    "pbr",
+    "Pillow",
+    "pip>=25.1.1",
+    "pluggy",
+    "prettytable",
+    "protobuf",
+    "psutil",
+    "py",
+    "pyaml",
+    "pyasn1",
+    "pyasn1-modules",
+    # "pybullet",
+    "pycodestyle",
+    "pycosat",
+    "pyenchant",
+    "pyflakes",
+    "pyfolio",
+    "pygame",
+    "pyglet",
+    "pyparsing",
+    "pyperclip",
+    "pytablewriter",
+    "pytest",
+    "pytest-cov",
+    "pytest-env",
+    "pytest-forked",
+    "pytest-xdist",
+    "python-dateutil",
+    "python-editor",
+    "pytype",
+    "pytz",
+    "PyYAML",
+    "regex",
+    "requests-oauthlib",
+    "rsa",
+    "ruamel-yaml",
+    "sb3-contrib",
+    "scikit-learn>=0.21.0",
+    "scikit-optimize",
+    "seaborn",
+    "setuptools>=41.4.0",
+    "snowballstemmer",
+    "Sphinx",
+    "sphinx-autobuild",
+    "sphinx-autodoc-typehints",
+    "sphinx-rtd-theme",
+    "sphinxcontrib-applehelp",
+    "sphinxcontrib-devhelp",
+    "sphinxcontrib-htmlhelp",
+    "sphinxcontrib-jsmath",
+    "sphinxcontrib-qthelp",
+    "sphinxcontrib-serializinghtml",
+    "sphinxcontrib-spelling",
+    "SQLAlchemy",
+    "stable-baselines3[extra]",
+    "stevedore",
+    "stockstats",
+    "tabledata",
+    "tcolorpy",
+    "tensorboard",
+    "tensorboard-plugin-wit",
+    "threadpoolctl",
+    "tk>=0.1.0",
+    "toml",
+    "torch",
+    "tornado",
+    "traitlets",
+    "typed-ast",
+    "typepy",
+    "Werkzeug",
+    "wheel>=0.33.6",
+    "yfinance",
+    "zipp",
+]
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "flake8",
+    "pytest",
+    "pytest-cov",
+    "pytest-env",
+    "pytest-forked",
+    "pytest-xdist",
+    "coverage",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["rl"]
+
+[tool.black]
+line-length = 200
+target-version = ['py39']
+
+[tool.isort]
+profile = "black"
+line_length = 200
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"] 
