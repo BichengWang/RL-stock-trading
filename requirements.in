@@ -10,7 +10,7 @@ matplotlib
 
 # Model Building Requirements
 scikit-learn>=0.21.0
-gym>=0.17
+# gym>=0.17
 stable-baselines3[extra]
 
 # testing requirements

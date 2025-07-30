@@ -87,6 +87,7 @@ dependencies = [
     "pyaml",
     "pyasn1",
     "pyasn1-modules",
+    "git+https://github.com/AI4Finance-Foundation/FinRL.git",
     # "pybullet",
     "pycodestyle",
     "pycosat",
